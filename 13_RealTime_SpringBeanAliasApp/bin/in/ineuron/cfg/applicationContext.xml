@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="firstYear" class="in.ineuron.comp.EnggClass"
+		abstract="true">
+		<property name="courses">
+			<set>
+				<value>M1</value>
+				<value>CAD</value>
+				<value>Chem</value>
+			</set>
+		</property>
+	</bean>
+	
+	<bean id="ComputerScience" class="in.ineuron.comp.EnggClass" parent="firstYear">
+		<property name="courses">
+			<set merge="true">
+				<value>DS</value>
+				<value>M3</value>
+				<value>C++</value>
+			</set>
+		</property>
+	</bean>
+	<alias name="ComputerScience" alias="CS"/>
+</beans>

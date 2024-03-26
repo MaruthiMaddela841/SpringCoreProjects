@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean  class="in.ineuron.comp.Student">
+		<property name="sid" value="10"></property>
+		<property name="sname" value="sachin"></property>
+		<property name="sage" value="23"></property>
+		<property name="saddress" value="MI"></property>
+	</bean>
+	
+	<bean  class="in.ineuron.comp.Student">
+		<property name="sid" value="11"></property>
+		<property name="sname" value="dhoni"></property>
+		<property name="sage" value="25"></property>
+		<property name="saddress" value="CSK"></property>
+	</bean>
+
+</beans>
