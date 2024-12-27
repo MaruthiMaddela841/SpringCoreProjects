@@ -17,8 +17,8 @@
 	<!-- Target Bean -->
 	<bean id="wmg" class="in.ineuron.comp.WishMessageGenerator">
 
-		<constructor-arg name="date" ref="dt2"></constructor-arg>
-		<property name="date" ref="dt1" />
+		<constructor-arg name="date" ref="dt1"></constructor-arg>
+		<property name="date" ref="dt2" />
 		<!-- collaborators and configuration for this bean go here -->
 	</bean>
 
