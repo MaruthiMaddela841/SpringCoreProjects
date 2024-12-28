@@ -10,7 +10,7 @@
 	
 	<bean id="fpkt" class="in.ineuron.comp.Flipkart">
 	<property name="discount" value="21.5f"></property>
-	<property name="courier" ref="bDart"></property>
+	<property name="courier" ref="dtdc"></property>
 	</bean>
 	
 

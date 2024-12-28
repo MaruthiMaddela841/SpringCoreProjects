@@ -18,6 +18,7 @@ public class ClientApp {
 		System.out.println(voter);
 		String status=voter.checkVotingEligibility();
 		System.out.println(status);
+		factory.close();
 		System.out.println("***********Container is Closing***********");
 	}
 

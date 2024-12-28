@@ -15,7 +15,7 @@ public class TestApp {
 			
 			System.out.println("Container Started...");
 			System.out.println("Bean ID::"+Arrays.toString(factory.getBeanDefinitionNames()));
-			System.in.read();
+			//System.in.read();
 			
 			Student student=factory.getBean("in.ineuron.comp.Student#0",Student.class);
 			System.out.println(student);

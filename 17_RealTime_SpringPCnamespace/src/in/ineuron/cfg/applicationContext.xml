@@ -11,8 +11,8 @@
 	<bean id="employee" class="in.ineuron.comp.Employee" 
 	p:eno="10" p:ename="Maruthi" p:dob-ref="dob" p:dept-ref="department"/>
 <!-- 	<bean id="department" class="in.ineuron.comp.Department"  p:dno="12" p:dname="CS" p:doj-ref="doj"/> -->
-	<bean id="department" class="in.ineuron.comp.Department"  c:dno="12" c:doj-ref="doj">
-<!-- 	<constructor-arg name="dname" value="CSE"></constructor-arg> -->
+	<bean id="department" class="in.ineuron.comp.Department"  c:dno="12"  c:doj-ref="doj">
+	<constructor-arg name="dname" value="CSE"></constructor-arg>
 	</bean>
 	
 </beans>

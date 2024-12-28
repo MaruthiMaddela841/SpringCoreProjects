@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="fFlight" class="in.ineuron.comp.FirstFlight" />
-	<bean id="bDart" class="in.ineuron.comp.BlueDart" primary="true"/>
-	<bean id="dtdc" class="in.ineuron.comp.DTDC" />
+	<bean id="bDart" class="in.ineuron.comp.BlueDart" />
+	<bean id="dtdc" class="in.ineuron.comp.DTDC" primary="true"/>
 
 	<bean id="fpkt" class="in.ineuron.comp.Flipkart" autowire="byType">
 		<property name="discount" value="30" />

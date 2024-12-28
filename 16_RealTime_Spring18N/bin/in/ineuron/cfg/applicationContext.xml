@@ -5,6 +5,6 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
-		<property name="basename" value="in/ineuron/commons/App"/>
+		<property name="basename" value="in/ineuron/commons/app"/>
 	</bean>
 </beans>

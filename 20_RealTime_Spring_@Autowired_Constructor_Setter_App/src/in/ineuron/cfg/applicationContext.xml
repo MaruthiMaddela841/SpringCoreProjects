@@ -15,9 +15,7 @@
 	<bean id="dtdc" class="in.ineuron.comp.DTDC" />
 
 	<bean id="fpkt" class="in.ineuron.comp.Flipkart">
-		<constructor-arg name="discount" value="30.0" />
+<!-- 		<constructor-arg name="discount" value="30.0" /> -->
 	</bean>
 
 </beans>
-	
-	

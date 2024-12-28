@@ -12,7 +12,8 @@ public class ClientApp {
 		//Activating the container
 		System.out.println("***********Container Starting**********");
 		ApplicationContext factory=new ClassPathXmlApplicationContext("in/ineuron/cfg/applicationContext.xml");
-		Locale locale=new Locale(args[0],args[1]);
+		//Locale locale=new Locale(args[0],args[1]);
+		Locale locale=new Locale("hi","IN");
 		System.out.println(factory.getMessage("btn1.cap", null,"msg1",locale));
 		System.out.println(factory.getMessage("btn2.cap", null,"msg1",locale));
 		System.out.println(factory.getMessage("btn3.cap", null,"msg1",locale));

@@ -12,7 +12,7 @@ public class TestApp {
 	public static void main(String[] args) throws IOException {
 		
 			ClassPathXmlApplicationContext factory=new ClassPathXmlApplicationContext("in/ineuron/cfg/applicationContext.xml");
-			System.in.read();
+			//System.in.read();
 			Printer printer=factory.getBean("printer",Printer.class);
 			System.out.println(printer);
 			

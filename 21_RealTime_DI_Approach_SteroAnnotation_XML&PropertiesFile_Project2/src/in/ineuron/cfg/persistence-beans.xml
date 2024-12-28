@@ -7,15 +7,19 @@
         https://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location"
+			value="classpath:in/ineuron/commons/application.properties" />
+	</bean>
+
 	<bean id="mysqlDAO"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
-			value="com.mysql.cj.jdbc.Driver"></property>
-		<property name="url"
-			value="jdbc:mysql://localhost:3306/jdbcsessions"></property>
-		<property name="username" value="root"></property>
-		<property name="password" value="Maru@841"></property>
-
+			value="${jdbc.driverClassName}"></property>
+		<property name="url" value="${jdbc.url}"></property>
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
 	</bean>
 
 </beans>

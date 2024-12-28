@@ -11,7 +11,7 @@ public class TestApp {
 	public static void main(String[] args) throws IOException {
 		
 			ClassPathXmlApplicationContext factory=new ClassPathXmlApplicationContext("in/ineuron/cfg/applicationContext.xml");
-			System.in.read();
+			//System.in.read();
 			WishMessageGenerator wmg= factory.getBean("wmg",WishMessageGenerator.class);
 			System.out.println(wmg+" avaialable at::"+wmg.hashCode());
 			

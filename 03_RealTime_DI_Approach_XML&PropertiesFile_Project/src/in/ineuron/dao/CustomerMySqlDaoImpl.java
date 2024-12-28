@@ -10,7 +10,7 @@ import in.ineuron.bo.CustomerBo;
 
 public class CustomerMySqlDaoImpl implements ICustomerDAO{
 	
-	private static final String REALTIME_DI_CUSTOMER_INSERT_QUERY = "INSERT INTO customer(cname,caddress,pamt,rate,time,intrAmt)VALUES(?,?,?,?,?,?);";
+	private static final String REALTIME_DI_CUSTOMER_INSERT_QUERY = "INSERT INTO customer_2(cname,caddress,pamt,rate,time,intrAmt)VALUES(?,?,?,?,?,?);";
 	
 	private DataSource datasource;
 	

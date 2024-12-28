@@ -17,10 +17,10 @@ public class TestApp {
 		reader.loadBeanDefinitions("in/ineuron/cfg/applicationContext.xml");
 		System.out.println("********Container Started**************\n");
 		A a=factory.getBean("a1",A.class);
-		//System.out.println("A:"+a);
+		System.out.println("A:"+a);
 		
 		B b=factory.getBean("b1",B.class);	
-		//System.out.println("B:"+b);
+		System.out.println("B:"+b);
 		
 		System.out.println("\n********Container Closed**************");
 
